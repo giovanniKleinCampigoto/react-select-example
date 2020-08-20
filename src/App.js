@@ -8,9 +8,15 @@ const options = [
 
 function App() {
   const [value, setValue] = useState("");
+
+  function handleOnChange(value) {
+    console.log(value);
+    setValue(value);
+  }
+
   return (
     <div className='App'>
-      <Select options={options} value={value} onChange={(v) => setValue(v)} />
+      <Select options={options} value={value} onChange={(v) => handleOnChange(v)} />
     </div>
   );
 }

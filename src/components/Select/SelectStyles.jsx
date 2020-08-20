@@ -92,8 +92,8 @@ const defaultStyles = css`
     color: ${colors.periwinkle}
 
     &:hover {
-      background-color: ${colors.paleGrey};
-      color: ${colors.darkBlue};
+      background-color: ${colors.salmon};
+      color: ${colors.salmon};
     }
 
     &:active {
@@ -103,6 +103,10 @@ const defaultStyles = css`
     &.react-select__option--is-selected {
       background-color: ${colors.primary}
       color: ${colors.primary}
+    }
+
+    .react-select__option--is-focused {
+      background: ${colors.periwinkle}
     }
 
   }
